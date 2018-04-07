@@ -20,12 +20,12 @@
                                     </div>
                                     <div class="column is-10">
                                         <div class="inner-content">
-                                        <h2 class="title is-4"><%= job.company %></h2>
+                                        <h2 class="title is-4"><%= job.title %></h2>
                                         <div class="inner-text">
-                                            <%= job.title %>
+                                            <%= job.company %>
                                         </div>
                                         <div class="card-meta">
-                                            <img class="small-avatar" src="https://strictcity.live/jobshare/assets/images/avatars/dan.png" alt="">
+                                            <%= image_tag gravatar_url('samuelsadiq52@gmail.com', 50), alt: "", :class => 'small-avatar' %>
                                             <div class="meta-info">
                                                 <div class="authors">Posted by <span>Elija Fabulu</span></div>
                                                 

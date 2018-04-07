@@ -18,6 +18,12 @@
                         </div>
                         <div class="card-body">
                             <%= form_for(job) do |f| %>
+                            <label class="form-label">User ID</label>
+                                <div class="control">      
+                                    <%= f.text_field :user_id, :class => 'input is-large capitalize', :required => 'true' %>
+                                </div>
+
+                            
                             <label class="form-label">Job Title</label>
                                 <div class="control">      
                                     <%= f.text_field :title, :class => 'input is-large capitalize', :required => 'true' %>
