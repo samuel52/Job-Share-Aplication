@@ -13,3 +13,105 @@
  *= require_tree .
  *= require_self
  */
+
+ font-family: 'IBM Plex Sans Condensed', sans-serif;
+ body, button, input, select, textarea{
+	font-family: 'IBM Plex Sans Condensed', sans-serif!important;	
+}
+.capitalize{
+	text-transform: capitalize;
+}
+ .inner-text{
+ 	font-size: 16px;
+ }
+ .hero.is-theme-primary .subtitle{
+ 	color: #000!important;
+ 	font-family: 'IBM Plex Sans Condensed', sans-serif;
+ }
+ .single-help-article .article-inner .content{
+ 	padding-top: 0!important;
+ 	font-size: 27px
+ }
+
+ .dark-text{
+ 	font-family: 'IBM Plex Sans Condensed', sans-serif;
+ }
+
+ .single-help-article .article-inner .content p{
+ 	font-size: 18px!important;
+ 	font-family: 'IBM Plex Sans Condensed', sans-serif;
+ }
+
+ .help-container .articles-list .help-article a .inner-content .title{
+ 	font-family: 'IBM Plex Sans Condensed', sans-serif;
+ 	font-weight: 700;
+ }
+
+ .help-container .articles-list .help-article a .inner-content .inner-text{
+ 	font-family: 'IBM Plex Sans Condensed', sans-serif;	
+ }
+
+ .section.help-section .category-card .card-body a .inner-content .title{
+ 	font-weight: 700;
+ 	font-family: 'IBM Plex Sans Condensed', sans-serif;
+ }
+
+ .section.help-section .category-card .card-body a .inner-content .card-meta .meta-info .authors{
+ 	font-size: 16px;
+ 	font-family: 'IBM Plex Sans Condensed', sans-serif;
+ }
+
+ .section.help-section .category-card .card-body a .inner-content .inner-text{
+ 	font-size: 22px;
+ 	font-family: 'IBM Plex Sans Condensed', sans-serif;
+ }
+
+.hero.is-theme-primary .title{
+	font-family: 'IBM Plex Sans Condensed', sans-serif;	
+}
+
+footer.footer-light-medium .footer-description{
+	font-size: 16px;
+	font-family: 'IBM Plex Sans Condensed', sans-serif;	
+}
+
+footer.footer-light-medium .moto{
+	font-family: 'IBM Plex Sans Condensed', sans-serif;	
+}
+
+footer.footer-light-medium .footer-column .column-item{
+	font-family: 'IBM Plex Sans Condensed', sans-serif;	
+}
+
+footer.footer-light-medium .footer-column .column-header{
+	font-family: 'IBM Plex Sans Condensed', sans-serif!important;
+}
+
+.single-help-article .article-inner .article-meta .meta-info .author{
+	font-size: 14px;
+	font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+.single-help-article .article-inner .article-meta .meta-info .status{
+	font-family: 'IBM Plex Sans Condensed', sans-serif;
+	font-weight: 400;
+}
+
+.breadcrumbs{
+	font-family: 'IBM Plex Sans Condensed', sans-serif!important;
+}
+
+.button.rounded{
+	border-radius: 1px!important;
+}
+
+.button.button-signup.btn-outlined.is-bold{
+	font-family: 'IBM Plex Sans Condensed', sans-serif!important;
+}
+
+.flex-card{
+	margin-bottom: 0px;
+}
+.flex-card .card-body{
+	padding: 15px 3px;
+}

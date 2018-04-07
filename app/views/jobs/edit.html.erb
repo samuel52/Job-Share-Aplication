@@ -1,0 +1,67 @@
+
+<!-- Vertical forms -->
+        <section class="section is-medium">
+            <div id="vertical-form" class="section-title-wrapper has-text-centered">
+                <h2 class="title section-title has-text-centered dark-text text-bold">
+                    Edit Your Jobs
+                </h2>
+            </div>
+            <!-- Material contact form -->
+            <div class="columns is-vcentered">
+                <div class="column is-6 is-offset-3">
+                    <div class="flex-card light-bordered light-raised">
+                        <div class="content has-text-centered mt-20">
+                        </div>
+                        <div class="card-body">
+                            <%= form_for(@job) do |f| %>
+                            <label class="form-label">Job Title</label>
+                                <div class="control">      
+                                    <%= f.text_field :title, :class => 'input is-large capitalize', :required => 'true' %>
+                                </div>
+
+                                <label class="form-label">Company</label>
+                                <div class="control">      
+                                    <%= f.text_field :company, :class => 'input is-large capitalize', :required => 'true' %>
+                                </div>
+                                
+                                <label class="form-label">Job Description</label>
+                                <div class="control">  
+                                    <%= f.text_area :description, :class => 'input is-large', :required => 'true' %>
+                                </div>
+
+                                <div class="control-material is-primary">
+                                    <%= f.date_select :expiry, :class => 'material-input', :required => 'true' %>
+                                </div>
+
+                                 <label class="form-label">Application URL/Email</label>
+                                <div class="control-material is-primary">      
+                                    <%= f.text_field :link, :class => 'input is-large capitalize', :required => 'true' %>
+                                </div>
+
+                                 <label class="form-label">Job Duties</label>
+                                <div class="control">      
+                                    <%= f.text_area :requirement, :class => 'input is-large', :required => 'true' %>
+                                </div>
+
+                                 <label class="form-label">Job Benefits</label>
+                                <div class="control">      
+                                    <%= f.text_area :benefit, :class => 'input is-large', :required => 'true' %>
+                                </div>
+
+                                 <label class="form-label">About Employer</label>
+                                <div class="control">      
+                                    <%= f.text_area :about, :class => 'input is-large', :required => 'true' %>
+                                </div>
+
+                                <div class="mt-20 has-text-right">
+                                    <%= link_to 'Back', jobs_path, :class => 'button btn-align info-btn raised' %>
+                                    <%= f.submit "Publish", :class => 'button btn-align info-btn raised' %>
+                                </div>
+                            <% end -%>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Material contact form -->
+        </section>
+        <!-- Vertical forms -->

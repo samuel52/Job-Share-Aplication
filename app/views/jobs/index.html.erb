@@ -1,0 +1,49 @@
+        <%= render 'search' %>
+        
+        <section class="section help-section">
+            <div class="container">
+                <div class="">
+                <% @jobs.each do |job| %>
+
+                    <div class="column is-12">
+                        
+                        <!-- Category card -->
+                        <div class="flex-card category-card light-bordered">
+                            <div class="card-body">
+                                <a href="/jobs/<%= job.id %>">
+                                    <!-- Icon -->
+                                    <div class="column is-2">
+                                        <div class="icon">
+                                        <i class="fa fa-building"></i>
+                                        </div>
+                                        <!-- Content -->
+                                    </div>
+                                    <div class="column is-10">
+                                        <div class="inner-content">
+                                        <h2 class="title is-4"><%= job.company %></h2>
+                                        <div class="inner-text">
+                                            <%= job.title %>
+                                        </div>
+                                        <div class="card-meta">
+                                            <img class="small-avatar" src="https://strictcity.live/jobshare/assets/images/avatars/dan.png" alt="">
+                                            <div class="meta-info">
+                                                <div class="authors">Posted by <span>Elija Fabulu</span></div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    
+                                </a>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                     
+                <% end -%>
+                    <div class="column">
+                    </div>
+                </div>
+            </div>
+        </section>

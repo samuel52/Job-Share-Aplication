@@ -1,0 +1,95 @@
+<!-- Article section -->
+        <div class="section help-section is-relative">
+            <div class="container">
+                <div class="columns is-vcentered">
+
+                    <div class="column"></div>
+                    <div class="column is-9 help-container">
+                        <!-- Breadcrumbs -->
+                        <nav class="breadcrumbs">
+                            <ul>
+                                <li><a href="landing-v3-help.html">Latest Jobs</a></li>
+                                <li><%= @job.title %></li>
+                            </ul>
+                        </nav>
+                        <!-- /Breadcrumbs -->
+                        
+                        <!-- Article body -->
+                        <div class="flex-card single-help-article">
+                            <div class="article-inner">
+                                <!-- Article meta -->
+                                <h2 class="title is-3 dark-text">
+                                    Postion for a <%= @job.title %>
+                                </h2>
+                                
+                                <div class="article-meta">
+                                    <img class="small-avatar" src="https://strictcity.live/jobshare/assets/images/avatars/nicole.jpg" alt="">
+                                    <div class="meta-info">
+                                        <div class="author">Posted by <span>Elijah Fabulo</span></div>
+                                        <div class="status">Posted about a week ago</div>
+                                    </div>
+                                </div>
+                                <!-- /Article meta -->
+                                <h3 class="subtitle is-5">About <%= @job.company %></h3>
+                                <!-- Article content -->
+                                <div class="content">
+                                    <p><%= @job.about %></p>
+                                    
+                                    <h4 class="subtitle is-5 dark-text">Your Role</h4>
+                                    
+                                    <p><%= @job.description %></p>
+                                    
+                                    <ul>
+                                        <li>Discovery pricing</li>
+                                        <li>Business pricing</li>
+                                    </ul>
+                                    
+                                    <h4 class="subtitle is-5 dark-text">Your Duties</h4>
+                                    
+                                    <p><%= @job.requirement %></p>
+                                                                       
+                                    <h4 class="subtitle is-5 dark-text">Job Benefit</h4>
+                                    
+                                    <p><%= @job.benefit %></p>
+                                    
+                                    <ul>
+                                        <li>Create a company</li>
+                                        <li>Add users to your team</li>
+                                        <li>Start working</li>
+                                    </ul>
+
+                                    <h4 class="subtitle is-5 dark-text">Appy Before</h4>
+                                    <p><%= @job.expiry %></p>
+                                </div>
+                                <!-- /Article content -->
+                                
+                                <!-- Rating section -->
+                                <div class="articles-list">
+                                <!-- Article -->
+                                <!-- Article -->
+                                <div class="help-article">
+                                    <a href="<%= @job.link %>" tar>
+                                        <div class="inner-content">
+                                            <h3 class="title is-5">Apply Here For This Position</h3>
+                                            <div class="inner-text"><%= @job.link %></div>
+                                            
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <% if user_signed_in? %>
+                            <%= link_to 'Edit Job', edit_job_path(@job), :class => 'button button-cta primary-btn' %>
+                                <%= link_to 'Delete Job', @job, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'button button-cta primary-btn' %>
+                                <% else %>
+                                <%= link_to 'Go Back', root_path, :class => 'button button-cta primary-btn' %>
+                            <% end -%>
+                                
+                            </div>
+                        </div>
+                        <!-- /Article body -->
+                    </div>
+                    <div class="column"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Article section -->

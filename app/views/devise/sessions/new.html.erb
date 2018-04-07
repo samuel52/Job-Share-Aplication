@@ -1,0 +1,105 @@
+<!-- Wrapper -->
+        <div class="login-wrapper columns is-gapless">
+
+            <!-- Form section -->
+            <div class="column is-7">
+                <div class="hero is-fullheight">
+                    <div class="hero-heading">
+                        <!-- Logo -->
+                        <div class="section has-text-centered">
+                            <a href="landing-v3.html"><img class="top-logo" src="https://strictcity.live/jobshare/assets/images/logos/bulkit-logo-lemonade.png" alt="Bulkit logo"></a>
+                        </div>
+                        <!-- Don't have an account yet -->
+                        <div class="no-account-link has-text-centered">
+                            <a href="/users/sign_up"><i class="fa fa-assistive-listening-systems"></i> I do not have an account yet </a>
+                        </div>
+                    </div>
+                    <div class="hero-body">
+                        <div class="container">
+                            <div class="columns">
+                                <div class="column"></div>
+                                <div class="column is-5">
+                                    <!-- Login Form -->
+                                    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+                                        <div id="signin-form" class="login-form animated preFadeInLeft fadeInLeft">
+                                            <!-- Input -->
+                                            <div class="field pb-10">
+                                                <div class="control">
+                                                  <%= f.email_field :email, autofocus: true, placeholder: "Email", :class => 'input is-large' %>
+                                                </div>
+                                            </div>
+                                            <!-- Input -->
+                                            <div class="field pb-10">
+                                                <div class="control">
+                                                    <%= f.password_field :password, autocomplete: "off", placeholder: "Password", :class => 'input is-large' %>
+                                                </div>
+                                            </div>
+                                            <!-- Submit -->
+                                            <p class="control login">
+                                              <%= f.submit "Log in", :class => 'button button-cta primary-btn btn-align-lg btn-outlined is-bold is-fullwidth rounded raised no-lh' %>
+                                            </p>
+                                        </div>
+                                    <% end -%>
+                                    <!-- /Login Form -->
+                                    
+                                    <!-- Reset Form -->
+                                    <form>
+                                        <div id="recover-form" class="login-form animated preFadeInLeft fadeInLeft is-hidden">
+                                            <!-- Input -->
+                                            <div class="field pb-10">
+                                                <div class="control">
+                                                    <input class="input is-large" type="text" placeholder="Email address">
+                                                </div>
+                                            </div>
+                                            <!-- Submit -->
+                                            <p class="control login">
+                                                <button class="button button-cta secondary-btn btn-align-lg btn-outlined is-bold is-fullwidth rounded raised no-lh">Reset password</button>
+                                            </p>
+                                        </div>
+                                    </form>
+                                    <!-- /Reset Form -->
+                                    
+                                    <!-- Toggles -->
+                                    <div id="recover" class="section forgot-password animated preFadeInLeft fadeInLeft">
+                                        <p class="has-text-centered">
+                                            <a href="#">Forgot password ?</a>
+                                        </p>
+                                    </div>
+
+                                    <div id="back-to-login" class="section forgot-password animated preFadeInLeft fadeInLeft is-hidden">
+                                        <p class="has-text-centered">
+                                            <a href="#">Back to Sign in</a>
+                                        </p>
+                                    </div>
+                                    <!-- /Toggles -->
+                                </div>
+                                <div class="column"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <!-- /Form section -->
+            
+            <!-- Image section (hidden on mobile) -->
+            <div class="column login-column is-5 is-hidden-mobile hero-banner">
+                <div class="hero is-fullheight is-theme-primary is-relative">
+                    <div class="columns has-text-centered">
+                        <div class="column">
+                            <h2 class="title is-2 light-text">
+                                Start managing now
+                            </h2>
+                            <h3 class="subtitle is-5 light-text">
+                                Stop struggling with common tasks and focus on the real choke points. Discover a full featured HR management platform.
+                            </h3>
+                            <div class="mt-30 has-text-centered">
+                                <a href="landing-v3-signup.html" class="button button-cta btn-outlined is-bold light-btn rounded">Get started Free</a>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="login-city" src="https://strictcity.live/jobshare/assets/images/illustrations/drawings/city.svg" alt="">
+                </div>  
+            </div>
+            <!-- /Image section -->
+        </div>
+        <!-- /Wrapper -->

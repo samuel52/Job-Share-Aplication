@@ -1,0 +1,35 @@
+<!-- Hero and nav -->
+        <div class="hero is-theme-primary">
+            <div class="navbar-wrapper navbar-fade navbar-light">
+                <div class="hero-head">
+
+                    <!-- Nav -->
+                    <div class="container">
+                        <nav class="nav">
+                            <div class="container big">
+                                <div class="nav-left">
+                                    <a class="nav-item" href="/">
+                                        <img class="light-logo" src="/assets/bulkit-w.png" alt="">
+                                    </a>
+                                    <!-- Sidebar trigger -->
+                                    
+                                </div>
+                                <!-- Responsive toggle -->
+                                
+                                <div class="nav-right nav-menu">
+
+                                    
+                                    <span class="nav-item">
+                                        <%= link_to 'Name Here', edit_user_registration_path, :class => "button button-signup btn-outlined is-bold btn-align light-btn rounded" %>
+                                        <%= link_to 'Log Out', destroy_user_session_path, method: :delete, :class => "button button-signup btn-outlined is-bold btn-align light-btn rounded" %>
+                                        
+                                    </span>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <!-- /Nav -->
+
+                </div>
+            </div>
+
